@@ -49,10 +49,15 @@
         function setup() {
 
             //Create the cat sprite
-            let cat = new Sprite(resources["images/webflux.png"].texture);
+            let webflux = new Sprite(resources["images/webflux.png"].texture);
+
+            webflux.position.set(96,96);
+            webflux.scale.set(0.5,0.5);
+            webflux.anchor.set(0.5,0.5);
+            webflux.rotation = 0.5;
 
             //Add the cat to the stage
-            app.stage.addChild(cat);
+            app.stage.addChild(webflux);
         }
     </script>
 </body>
